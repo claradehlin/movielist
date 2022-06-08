@@ -20,7 +20,7 @@ document.querySelector('form').addEventListener('submit', addMovie);
 
 function deleteMovie(event) {
     event.target.parentNode.remove();
-    message.textContent = event.target.parentNode.textContent + " hath been deleted!";
+    message.textContent = event.target.previousSibling.textContent + " hath been deleted!";
     revealMessage();
 }
 
